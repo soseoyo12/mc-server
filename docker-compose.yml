@@ -10,11 +10,22 @@ services:
       VERSION: "1.21.4"
       MEMORY: "8G"
       DIFFICULTY: "normal"
-      MOTD: "soseoyo-mincraft"
+      MOTD: "성용쓰의 마크서버"
       MAX_PLAYERS: "10"
       ONLINE_MODE: "TRUE"
       OPS: "soseoyo12"
       TZ: "Asia/Seoul"
+      MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
+      MODRINTH_PROJECTS: |
+        essentialsx
+        luckperms
+        coreprotect
+        worldedit
+        squaremap
+        spark
+        chunky
+        viaversion
+        viabackwards
     volumes:
       - ./data:/data
     restart: unless-stopped
