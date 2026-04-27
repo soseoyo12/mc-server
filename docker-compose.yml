@@ -7,7 +7,7 @@ services:
     environment:
       EULA: "TRUE"
       TYPE: "PAPER"
-      VERSION: "1.21.4"
+      VERSION: "1.21.8"
       MEMORY: "8G"
       DIFFICULTY: "normal"
       MOTD: "성용쓰의 마크서버"
