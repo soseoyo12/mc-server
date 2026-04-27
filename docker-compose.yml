@@ -13,7 +13,7 @@ services:
       MOTD: "성용쓰의 마크서버"
       MAX_PLAYERS: "10"
       ONLINE_MODE: "TRUE"
-      OPS: "soseoyo12"
+      OPS: "soseoyo_12"
       TZ: "Asia/Seoul"
       MODRINTH_DOWNLOAD_DEPENDENCIES: "required"
       MODRINTH_PROJECTS: |
@@ -21,8 +21,6 @@ services:
         luckperms
         coreprotect
         worldedit
-        squaremap
-        spark
         chunky
         viaversion
         viabackwards
