@@ -28,6 +28,23 @@ services:
         viabackwards
     volumes:
       - ./data:/data
+    networks:                                      
+      - mc-net                                     
     restart: unless-stopped
     stdin_open: true
     tty: true
+
+  playit:                                         
+    image: ghcr.io/playit-cloud/playit-agent:0.17
+    container_name: playit
+    environment:
+      - SECRET_KEY=${PLAYIT_SECRET}
+    networks:
+      - mc-net
+    depends_on:
+      - mc
+    restart: unless-stopped
+
+networks:                                         
+  mc-net:
+    driver: bridge
