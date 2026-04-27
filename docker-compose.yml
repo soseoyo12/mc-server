@@ -1,0 +1,22 @@
+services:
+  mc:
+    image: itzg/minecraft-server
+    container_name: mc-server
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+      TYPE: "PAPER"
+      VERSION: "1.21.4"
+      MEMORY: "8G"
+      DIFFICULTY: "normal"
+      MOTD: "soseoyo-mincraft"
+      MAX_PLAYERS: "10"
+      ONLINE_MODE: "TRUE"
+      OPS: "soseoyo12"
+      TZ: "Asia/Seoul"
+    volumes:
+      - ./data:/data
+    restart: unless-stopped
+    stdin_open: true
+    tty: true

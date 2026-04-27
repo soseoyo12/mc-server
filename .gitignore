@@ -1,0 +1,10 @@
+# 월드 데이터, 로그 등 런타임 생성 파일
+data/
+
+# macOS 부산물
+.DS_Store
+
+# 에디터 부산물
+.vscode/
+.idea/
+*.swp
